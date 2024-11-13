@@ -50,10 +50,6 @@ The project follows a modular structure adhering to Clean Architecture principle
 
 ```plaintext
 lib/
-├── core/
-│   ├── enums/          # Enums like `ToastType`
-│   ├── extensions/     # Extension methods
-│   ├── util/           # Utilities, constants, and helpers
 ├── data/
 │   ├── datasource/     # Remote or local data sources
 │   ├── repository/     # Repository implementations
@@ -62,6 +58,9 @@ lib/
 │   ├── entities/       # Core entities for the business layer
 │   ├── usecases/       # Use case classes encapsulating business logic
 ├── presentation/
+│   ├── enums/          # Enums like `ToastType`
+│   ├── extensions/     # Extension methods
+│   ├── util/           # Utilities, constants, and helpers
 │   ├── pages/          # Screens and pages
 │   ├── widgets/        # Custom widgets and UI components
 │   ├── theme/          # Theme and styling
