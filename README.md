@@ -1,4 +1,4 @@
-# benchmark_project
+# Clean Architecture With Flutter.
 
 A new Flutter project.
 
