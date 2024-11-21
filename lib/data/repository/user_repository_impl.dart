@@ -34,7 +34,6 @@ import 'package:benchmark_project/domain/repository/user_repository.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../domain/source/remote/user_remote_source.dart';
-
 @LazySingleton(as: UserRepository)
 class ProfileRepositoryImpl extends UserRepository {
   ProfileRepositoryImpl({

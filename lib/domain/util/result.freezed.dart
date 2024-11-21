@@ -71,9 +71,6 @@ class _$ResultCopyWithImpl<T, $Res, $Val extends Result<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -93,8 +90,6 @@ class __$$SuccessResultImplCopyWithImpl<T, $Res>
       $Res Function(_$SuccessResultImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -134,9 +129,7 @@ class _$SuccessResultImpl<T> extends SuccessResult<T> {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SuccessResultImplCopyWith<T, _$SuccessResultImpl<T>> get copyWith =>
@@ -211,10 +204,7 @@ abstract class SuccessResult<T> extends Result<T> {
   const SuccessResult._() : super._();
 
   T get value;
-
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SuccessResultImplCopyWith<T, _$SuccessResultImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -238,8 +228,6 @@ class __$$FailureResultImplCopyWithImpl<T, $Res>
       $Res Function(_$FailureResultImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -253,8 +241,6 @@ class __$$FailureResultImplCopyWithImpl<T, $Res>
     ));
   }
 
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FailureCopyWith<$Res> get failure {
@@ -288,9 +274,7 @@ class _$FailureResultImpl<T> extends FailureResult<T> {
   @override
   int get hashCode => Object.hash(runtimeType, failure);
 
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FailureResultImplCopyWith<T, _$FailureResultImpl<T>> get copyWith =>
@@ -365,10 +349,7 @@ abstract class FailureResult<T> extends Result<T> {
   const FailureResult._() : super._();
 
   Failure get failure;
-
-  /// Create a copy of Result
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FailureResultImplCopyWith<T, _$FailureResultImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -113,9 +113,7 @@ mixin _$Failure {
   }) =>
       throw _privateConstructorUsedError;
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FailureCopyWith<Failure> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -137,8 +135,6 @@ class _$FailureCopyWithImpl<$Res, $Val extends Failure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -172,8 +168,6 @@ class __$$CancelExceptionImplCopyWithImpl<$Res>
       _$CancelExceptionImpl _value, $Res Function(_$CancelExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -212,9 +206,7 @@ class _$CancelExceptionImpl extends CancelException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CancelExceptionImplCopyWith<_$CancelExceptionImpl> get copyWith =>
@@ -348,11 +340,8 @@ abstract class CancelException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CancelExceptionImplCopyWith<_$CancelExceptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -378,8 +367,6 @@ class __$$ConnectionTimeoutExceptionImplCopyWithImpl<$Res>
       $Res Function(_$ConnectionTimeoutExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -418,9 +405,7 @@ class _$ConnectionTimeoutExceptionImpl extends ConnectionTimeoutException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConnectionTimeoutExceptionImplCopyWith<_$ConnectionTimeoutExceptionImpl>
@@ -554,11 +539,8 @@ abstract class ConnectionTimeoutException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConnectionTimeoutExceptionImplCopyWith<_$ConnectionTimeoutExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -584,8 +566,6 @@ class __$$ReceiveTimeoutExceptionImplCopyWithImpl<$Res>
       $Res Function(_$ReceiveTimeoutExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -624,9 +604,7 @@ class _$ReceiveTimeoutExceptionImpl extends ReceiveTimeoutException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ReceiveTimeoutExceptionImplCopyWith<_$ReceiveTimeoutExceptionImpl>
@@ -760,11 +738,8 @@ abstract class ReceiveTimeoutException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ReceiveTimeoutExceptionImplCopyWith<_$ReceiveTimeoutExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -788,8 +763,6 @@ class __$$SendTimeoutExceptionImplCopyWithImpl<$Res>
       $Res Function(_$SendTimeoutExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -828,9 +801,7 @@ class _$SendTimeoutExceptionImpl extends SendTimeoutException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SendTimeoutExceptionImplCopyWith<_$SendTimeoutExceptionImpl>
@@ -965,11 +936,8 @@ abstract class SendTimeoutException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SendTimeoutExceptionImplCopyWith<_$SendTimeoutExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -993,8 +961,6 @@ class __$$SocketExceptionImplCopyWithImpl<$Res>
       _$SocketExceptionImpl _value, $Res Function(_$SocketExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1043,9 +1009,7 @@ class _$SocketExceptionImpl extends SocketException {
   @override
   int get hashCode => Object.hash(runtimeType, message, statusCode);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SocketExceptionImplCopyWith<_$SocketExceptionImpl> get copyWith =>
@@ -1181,11 +1145,8 @@ abstract class SocketException extends Failure {
   @override
   String get message;
   int get statusCode;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SocketExceptionImplCopyWith<_$SocketExceptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1210,8 +1171,6 @@ class __$$UnrecognizedExceptionImplCopyWithImpl<$Res>
       $Res Function(_$UnrecognizedExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1250,9 +1209,7 @@ class _$UnrecognizedExceptionImpl extends UnrecognizedException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UnrecognizedExceptionImplCopyWith<_$UnrecognizedExceptionImpl>
@@ -1386,11 +1343,8 @@ abstract class UnrecognizedException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UnrecognizedExceptionImplCopyWith<_$UnrecognizedExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1414,8 +1368,6 @@ class __$$TokenEpiredExceptionImplCopyWithImpl<$Res>
       $Res Function(_$TokenEpiredExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1454,9 +1406,7 @@ class _$TokenEpiredExceptionImpl extends TokenEpiredException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TokenEpiredExceptionImplCopyWith<_$TokenEpiredExceptionImpl>
@@ -1591,11 +1541,8 @@ abstract class TokenEpiredException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TokenEpiredExceptionImplCopyWith<_$TokenEpiredExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1619,8 +1566,6 @@ class __$$ServerExceptionImplCopyWithImpl<$Res>
       _$ServerExceptionImpl _value, $Res Function(_$ServerExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1679,9 +1624,7 @@ class _$ServerExceptionImpl extends ServerException {
   int get hashCode => Object.hash(runtimeType, message, statusCode,
       const DeepCollectionEquality().hash(data));
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ServerExceptionImplCopyWith<_$ServerExceptionImpl> get copyWith =>
@@ -1819,11 +1762,8 @@ abstract class ServerException extends Failure {
   String get message;
   int get statusCode;
   dynamic get data;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ServerExceptionImplCopyWith<_$ServerExceptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1847,8 +1787,6 @@ class __$$FormatExceptionImplCopyWithImpl<$Res>
       _$FormatExceptionImpl _value, $Res Function(_$FormatExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1887,9 +1825,7 @@ class _$FormatExceptionImpl extends FormatException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FormatExceptionImplCopyWith<_$FormatExceptionImpl> get copyWith =>
@@ -2023,11 +1959,8 @@ abstract class FormatException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FormatExceptionImplCopyWith<_$FormatExceptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2053,8 +1986,6 @@ class __$$SerializationExceptionImplCopyWithImpl<$Res>
       $Res Function(_$SerializationExceptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2093,9 +2024,7 @@ class _$SerializationExceptionImpl extends SerializationException {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SerializationExceptionImplCopyWith<_$SerializationExceptionImpl>
@@ -2229,11 +2158,8 @@ abstract class SerializationException extends Failure {
 
   @override
   String get message;
-
-  /// Create a copy of Failure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SerializationExceptionImplCopyWith<_$SerializationExceptionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

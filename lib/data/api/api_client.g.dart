@@ -22,13 +22,13 @@ class _RestClient implements RestClient {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<dynamic> login(Map<String, dynamic> map) async {
+  Future<UserEntity> login(Map<String, dynamic> map) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
     _data.addAll(map);
-    final _options = _setStreamType<dynamic>(Options(
+    final _options = _setStreamType<UserEntity>(Options(
       method: 'POST',
       headers: _headers,
       extra: _extra,
@@ -44,8 +44,14 @@ class _RestClient implements RestClient {
           _dio.options.baseUrl,
           baseUrl,
         )));
-    final _result = await _dio.fetch(_options);
-    final _value = _result.data;
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late UserEntity _value;
+    try {
+      _value = UserEntity.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
     return _value;
   }
 
