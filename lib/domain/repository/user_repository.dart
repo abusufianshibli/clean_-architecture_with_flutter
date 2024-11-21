@@ -20,7 +20,7 @@
 
 // 5. Overview Comment:
 //
-//    // UserRepository Interface
+//    // UserRepository Abstract
 //    // This interface serves as a contract in the Domain layer, defining the required method `getUserInfo` to
 //    // retrieve user data. Concrete implementations of `UserRepository` will provide the actual
 //    // data-fetching logic from sources such as APIs, databases, or caches. The class adheres to Clean Architecture principles
